@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <h2>PharmaCare</h2>
+
+    <div class="menu-toggle">☰</div>
+
+    <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</header>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>صحتك أولويتنا</h1>
+
+            <p>
+                نوفر لك أفضل المنتجات الطبية والعناية الصحية بأفضل جودة وأسعار مناسبة.
+            </p>
+
+            <a href="#" class="btn">Shop Now</a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="doctor.png" alt="Doctor"
+                 onerror="this.src='https://via.placeholder.com/600';">
+
+        </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+
+        <h2>Our Services</h2>
+
+        <div class="services-container">
+
+            <div class="service-box">
+                <div class="icon">💊</div>
+                <h3>التوصيل</h3>
+                <p>توصيل سريع للمنتجات الطبية حتى باب المنزل.</p>
+            </div>
+
+            <div class="service-box">
+                <div class="icon">🩺</div>
+                <h3>استشارة طبية</h3>
+                <p>استشارة طبية أونلاين مع متخصصين.</p>
+            </div>
+
+            <div class="service-box">
+                <div class="icon">📞</div>
+                <h3>الدعم</h3>
+                <p>دعم فني وخدمة عملاء على مدار 24 ساعة.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+
+        <h2>Featured Products</h2>
+
+        <div class="products-container">
+
+            <div class="product-card">
+
+                <img src="doctor.png" alt="Product">
+
+                <h3>Panadol Extra</h3>
+
+                <p>80 EGP</p>
+
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
